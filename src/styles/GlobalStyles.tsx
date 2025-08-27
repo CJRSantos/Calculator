@@ -1,6 +1,5 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from "react-native"; 
 import { myColors } from "./Colors";
-
 
 export const Styles = StyleSheet.create({
     // Button
@@ -50,23 +49,23 @@ export const Styles = StyleSheet.create({
     },
     // Keyboard
     row: {
-        maxWidth: '100%',
+        maxWidth: "100%",
         flexDirection: "row",
     },
-    viewBotton: {
-        position: 'absolute',
+    viewBottom: {   // ✅ corregido
+        position: "absolute",
         bottom: 50,
     },
     screenFirstNumber: {
         fontSize: 96,
         color: myColors.gray,
-        fontWeight: '200',
+        fontWeight: "200",
         alignSelf: "flex-end",
     },
     screenSecondNumber: {
         fontSize: 40,
         color: myColors.gray,
-        fontWeight: '200',
+        fontWeight: "200",
         alignSelf: "flex-end",
     },
 });
