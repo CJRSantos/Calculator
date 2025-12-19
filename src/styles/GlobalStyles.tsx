@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native"; 
+import { StyleSheet } from "react-native";
 import { myColors } from "./Colors";
 
 export const Styles = StyleSheet.create({
@@ -57,7 +57,7 @@ export const Styles = StyleSheet.create({
         bottom: 50,
     },
     screenFirstNumber: {
-        fontSize: 96,
+        fontSize: 50,
         color: myColors.gray,
         fontWeight: "200",
         alignSelf: "flex-end",
@@ -67,5 +67,56 @@ export const Styles = StyleSheet.create({
         color: myColors.gray,
         fontWeight: "200",
         alignSelf: "flex-end",
+    },
+    // Menu
+    menuContainer: {
+        position: 'absolute',
+        top: 50,
+        right: 20,
+        backgroundColor: myColors.btnDark,
+        borderRadius: 10,
+        padding: 10,
+        zIndex: 200,
+        elevation: 5,
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+    },
+    menuItem: {
+        padding: 10,
+    },
+    menuText: {
+        color: myColors.white,
+        fontSize: 18,
+    },
+    // History
+    historyContainer: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        backgroundColor: 'rgba(0,0,0,0.9)',
+        zIndex: 100,
+        padding: 20,
+        paddingTop: 60,
+    },
+    historyItem: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingVertical: 15,
+        borderBottomWidth: 1,
+        borderBottomColor: myColors.btnGray,
+    },
+    historyText: {
+        color: myColors.white,
+        fontSize: 18,
+    },
+    historyResult: {
+        color: myColors.result,
+        fontSize: 24,
+        fontWeight: 'bold',
     },
 });
